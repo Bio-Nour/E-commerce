@@ -1,0 +1,103 @@
+.shopcategory-banner{
+    width: 82%;
+    display: block;
+    margin: 30px auto;
+}
+.shopcategory-indexSort{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.shopcategory-indexSort p span{
+    font-weight: 600;
+}
+.shopcategory-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    cursor: pointer;
+}
+.shopcategory-products{
+    margin: 20px aut;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+.shopcategory-loadmore{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 69px;
+    background-color: #ededed;
+    color: #787878;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* <<<<<<<<<<<<<<<<<<<..........Media Query........>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (max-width: 1280px) {
+    .shopcategory-banner{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .shopcategory-indexSort{
+        margin: auto;
+        width: 90%;
+    }
+    .shopcategory-sort{
+        padding: 5px 8px;
+        font-size: 13px;
+
+    }
+    .shopcategory-indexSort p{
+        font-size: 13px;
+    }
+    .shopcategory-products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .shopcategory-products .item{
+        margin: auto;
+    }
+    .shopcategory-loadmore{
+        width: 200px;
+        height: 60px;
+        margin: 100px auto;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .shopcategory-banner{
+        width: 99%;
+        /* margin: 10px auto; */
+    }
+    .shopcategory-products{
+        width: 99%;
+        margin: 10px 0px;
+      
+    }
+    .shopcategory-loadmore{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        margin: 60px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .shopcategory-products{
+        grid-template-columns: 1fr 1fr;
+      
+    }
+   
+}
